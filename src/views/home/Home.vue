@@ -4,17 +4,21 @@
       <div slot="center">购物商城</div>
     </nav-bar>
     <swiper></swiper>
+    <icons></icons>
   </div>
 </template>
 <script>
-import { getHomeData } from "@network/home";
 import NavBar from "@components/common/navbar/NavBar";
-import Swiper from "@components/common/swiper/Swiper";
+import Swiper from "./chirden/swiper/Swiper";
+import Icons from "./chirden/icons/Icons";
+
+import { getHomeData } from "@network/home";
 export default {
   name: "Home",
   components: {
     NavBar,
-    Swiper
+    Swiper,
+    Icons
   },
   data() {
     return {
