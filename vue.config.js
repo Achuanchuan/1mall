@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const resolve = dir => path.join(__dirname, dir);
+const path = require("path");
 module.exports = {
   chainWebpack: config => {
     config.resolve.symlinks(true);
@@ -13,6 +14,7 @@ module.exports = {
       .set("@components", resolve("src/components"))
       .set("@router", resolve("src/router"))
       .set("@store", resolve("src/store"))
+      .set("@network", resolve("src/network"))
       .set("@utils", resolve("src/utils"))
       .set("@views", resolve("src/views"));
   }
