@@ -16,28 +16,28 @@ export default {
       iconList: [
         {
           id: "01",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/hotel.png",
+          imgUrl:require("@assets/img/home/icon1/hotel.png"),
           desc: "酒店"
         },
         {
           id: "02",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/flight.png",
+          imgUrl: require("@assets/img/home/icon1/flight.png"),
           desc: "机票"
         },
         {
           id: "03",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/package.png",
+          imgUrl: require("@assets/img/home/icon1/package.png"),
           desc: "度假"
         },
         {
           id: "04",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/train.png",
+          imgUrl: require("@assets/img/home/icon1/train.png"),
           desc: "火车票"
         },
         {
           id: "05",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/hotel.png",
-          desc: "酒店"
+          imgUrl: require("@assets/img/home/icon1/piao.png"),
+          desc: "门票"
         }
       ]
     };

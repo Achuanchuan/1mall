@@ -2,8 +2,8 @@ import Vue from "vue";
 import Router from "vue-router";
 
 const Home = () => import("@views/home/Home");
-const Category = () => import("@views/category/Category");
-const Cart = () => import("@views/cart/Cart");
+const InterestingSea = () => import("@views/Interestingsea/InterestingSea");
+const Order = () => import("@views/order/Order");
 const Profile = () => import("@views/profile/Profile");
 
 Vue.use(Router);
@@ -19,12 +19,12 @@ export default new Router({
       component: Home
     },
     {
-      path: "/category",
-      component: Category
+      path: "/Interestingsea",
+      component: InterestingSea
     },
     {
-      path: "/cart",
-      component: Cart
+      path: "/order",
+      component: Order
     },
     {
       path: "/profile",

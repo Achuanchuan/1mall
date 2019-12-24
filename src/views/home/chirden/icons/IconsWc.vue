@@ -17,55 +17,53 @@ export default {
       iconList: [
         {
           id: "01",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/innBnb.png",
+          imgUrl: require("@assets/img/home/icon2/innBnb.png"),
           desc: "名宿客栈",
           link:''
         },
         {
           id: "02",
-          imgUrl:
-            "//s.qunarzz.com/homenode/images/touchheader/bargainflight.png",
+          imgUrl:require("@assets/img/home/icon2/bargainflight.png"),
           desc: "低价机票"
         },
         {
           id: "03",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/group.png",
+          imgUrl:require("@assets/img/home/icon2/group.png"),
           desc: "特惠酒店"
         },
         {
           id: "04",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/haiwai.png",
+          imgUrl:require("@assets/img/home/icon2/haiwai.png"),
           desc: "海外酒店"
         },
         {
           id: "05",
-          imgUrl: "//picbed.qunarzz.com/7804b43ac02cd0333bd0f866eebd43b3.png",
+          imgUrl:require("@assets/img/home/icon2/you.png"),
           desc: "一日游"
         },
         {
           id: "06",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/tuan.png",
+          imgUrl:require("@assets/img/home/icon2/tuan.png"),
           desc: "旅游团购"
         },
         {
           id: "07",
-          imgUrl:
-            "//s.qunarzz.com/homenode/images/touchheader/car.png",
+          imgUrl:require("@assets/img/home/icon2/car.png"),
           desc: "专车自驾"
         },
         {
           id: "08",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/aroundtravel.png",
+          imgUrl: require("@assets/img/home/icon2/aroundtravel.png"),
           desc: "周边短途"
         },
         {
           id: "09",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/freeTravel.png",
+          imgUrl: require("@assets/img/home/icon2/freeTravel.png"),
           desc: "自由行"
         },
         {
           id: "010",
-          imgUrl: "//s.qunarzz.com/homenode/images/touchheader/youlun.png",
+          imgUrl: require("@assets/img/home/icon2/youlun.png"),
           desc: "游轮"
         }
       ]
@@ -76,8 +74,7 @@ export default {
 
 <style scoped>
 .van-grid-item {
-  /* padding-top: 5px; */
-  margin-top: -15px;
+  margin-top: -14px;
 }
 .icons-wc {
   background-color: aqua;

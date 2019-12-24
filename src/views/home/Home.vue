@@ -9,9 +9,11 @@
         <van-button class="btn-dl" type="primary" to="profile">登录</van-button>
       </div>
     </nav-bar>
-    <swiper></swiper>
-    <icons></icons>
-    <icons-wc></icons-wc>
+    <swiper />
+    <icons />
+    <icons-wc />
+    <preferential />
+    <holiday />
   </div>
 </template>
 <script>
@@ -19,6 +21,8 @@ import NavBar from "@components/common/navbar/NavBar";
 import Swiper from "./chirden/swiper/Swiper";
 import Icons from "./chirden/icons/Icons";
 import IconsWc from "./chirden/icons/IconsWc";
+import Preferential from "./chirden/preferential/Preferential";
+import Holiday from "./chirden/holiday/Holiday";
 
 import { getHomeData } from "@network/home";
 export default {
@@ -27,7 +31,9 @@ export default {
     NavBar,
     Swiper,
     Icons,
-    IconsWc
+    IconsWc,
+    Preferential,
+    Holiday
   },
   data() {
     return {
@@ -43,7 +49,7 @@ export default {
 };
 </script>
 <style scoped>
-.adress{
+.adress {
   color: #000;
 }
 .home-nav {
