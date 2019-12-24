@@ -26,7 +26,7 @@ export default {
 .left,
 .right {
   width: 60px;
-  background-color: bisque;
+  background-color: #fff;
 }
 .center {
   flex: 1;

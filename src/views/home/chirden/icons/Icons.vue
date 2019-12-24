@@ -1,15 +1,11 @@
 <template>
   <div class="icons">
-    <div class="icon" v-for="item of iconList" :key="item.id">
-      <a href>
-        <div class="icon-img">
-          <img class="icon-img-center" :src="item.imgUrl" alt />
-        </div>
-        <div class="icon-text">
-          <p>{{item.desc}}</p>
-        </div>
-      </a>
-    </div>
+    <van-grid :column-num="5" :border="false">
+      <van-grid-item v-for="item of iconList" :key="item.id">
+        <img :src="item.imgUrl" alt />
+        <p>{{item.desc}}</p>
+      </van-grid-item>
+    </van-grid>
   </div>
 </template>
 <script>
@@ -49,22 +45,7 @@ export default {
 };
 </script>
 <style scoped>
-.icons {
+.van-grid-item img {
   width: 100%;
-  padding-bottom: 50%;
-  display: flex;
-  flex-direction: row;
-}
-.icon {
-  width: 20%;
-}
-.icon-img img {
-  display: block;
-  text-align: center;
-  width: 70%;
-  margin: 5px 10px;
-}
-.icon-text {
-  text-align: center;
 }
 </style>
