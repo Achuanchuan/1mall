@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <nav-bar class="home-nav">
-      <div class="adress" slot="left">重庆+</div>
+      <div class="adress" slot="left">重庆<van-icon name="arrow-down" /></div>
       <div slot="center">
         <van-search class="search" placeholder="请输入搜索关键词" v-model="value" />
       </div>
@@ -71,7 +71,6 @@ export default {
   color: #000;
 }
 .home-nav {
-  background-color: bisque;
   color: #fff;
 }
 .search {
