@@ -14,6 +14,10 @@
     <icons-wc />
     <preferential />
     <holiday />
+    <tickets />
+
+    <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+    </van-pull-refresh>
   </div>
 </template>
 <script>
@@ -23,7 +27,9 @@ import Icons from "./chirden/icons/Icons";
 import IconsWc from "./chirden/icons/IconsWc";
 import Preferential from "./chirden/preferential/Preferential";
 import Holiday from "./chirden/holiday/Holiday";
+import Tickets from "./chirden/tickets/Tickets";
 
+// import Scroll from "@components/common/scroll/Scroll";
 import { getHomeData } from "@network/home";
 export default {
   name: "Home",
@@ -33,13 +39,25 @@ export default {
     Icons,
     IconsWc,
     Preferential,
-    Holiday
+    Holiday,
+    Tickets
+    // Scroll
   },
   data() {
     return {
       result: null,
-      value: ""
+      value: "",
+      isLoading: false
     };
+  },
+  methods: {
+    onRefresh() {
+      setTimeout(() => {
+        this.$toast("刷新成功");
+        this.isLoading = false;
+        this.count++;
+      }, 500);
+    }
   },
   created() {
     getHomeData().then(res => {

@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <h2>购物车</h2>
+    <h2>目的地</h2>
   </div>
 </template>
 <script>
 export default {
-  name:'Cart'
+  name:'Location'
 }
 </script>
 <style scoped>

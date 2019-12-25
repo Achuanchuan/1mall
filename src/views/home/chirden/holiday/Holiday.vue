@@ -2,7 +2,6 @@
   <div class="holiday">
     <h3>
       <label>当季热门度假</label>
-      <a href="#">更多 ></a>
     </h3>
     <van-grid :column-num="2" :border="false">
       <van-grid-item v-for="item of iconList" :key="item.id">
@@ -65,6 +64,18 @@ export default {
           desc: "含往返飞机票",
           price: "￥2588",
           link: ""
+        },
+        {
+          id: "07",
+          imgUrl: require("@assets/img/home/holiday/day7.jpg"),
+          desc: "含往返飞机票",
+          price: "￥2588"
+        },
+        {
+          id: "08",
+          imgUrl: require("@assets/img/home/holiday/day8.jpg"),
+          desc: "含往返飞机票",
+          price: "￥2588"
         }
       ]
     };
@@ -88,10 +99,6 @@ export default {
 }
 .holiday label {
   float: left;
-}
-.holiday a {
-  float: right;
-  font-size: 16px;
 }
 .day p {
   margin: 5px 0 5px 0;
