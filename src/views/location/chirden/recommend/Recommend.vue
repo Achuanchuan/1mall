@@ -39,7 +39,7 @@ export default {
             {
               id: "02",
               img: require("@assets/img/location/recommends/tui2.jpg"),
-              title: "寒假遛娃地盘点",
+              title: "寒假遛娃盘点",
               text: "最佳亲子旅行地"
             },
             {
@@ -382,10 +382,10 @@ export default {
   border-radius: 5px;
 }
 .recommend {
-  padding: 10px 8px 0 8px;
+  padding: 10px 8px 0 6px;
 }
 h3{
   font-weight: bolder;
-  padding: 10px 16px;
+  padding: 10px 12px;
 }
 </style>

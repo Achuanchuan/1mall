@@ -3,7 +3,7 @@
     <van-grid :column-num="5" :border="false">
       <van-grid-item v-for="item of iconList" :key="item.id">
         <img :src="item.imgUrl" alt />
-        <p>{{item.desc}}</p>
+        <p class="icons-p">{{item.desc}}</p>
       </van-grid-item>
     </van-grid>
   </div>
@@ -47,5 +47,8 @@ export default {
 <style scoped>
 .van-grid-item img {
   width: 100%;
+}
+.icons-p{
+  margin-top: 5px;
 }
 </style>

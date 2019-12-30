@@ -1,0 +1,20 @@
+ {
+   "swiperList": [
+        {
+          "id": "01",
+          "imgUrl": "@assets/img/home/swiper/banner1.jpg"
+        },
+        {
+          "id": "02",
+          "imgUrl": "@assets/img/home/swiper/banner2.jpg"
+        },
+        {
+         " id": "03",
+          "imgUrl": "@assets/img/home/swiper/banner3.jpg"
+        },
+        {
+          "id": "04",
+          "imgUrl": "@assets/img/home/swiper/banner4.jpg"
+        }
+      ]
+    }

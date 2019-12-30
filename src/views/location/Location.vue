@@ -15,18 +15,24 @@
       <swiper />
     </div>
     <recommend />
+    <topic />
+    <the-surrounding />
   </div>
 </template>
 <script>
 import NavBar from "@components/common/navbar/NavBar";
 import Swiper from "./chirden/swiper/Swiper";
-import Recommend from './chirden/recommend/Recommend';
+import Recommend from "./chirden/recommend/Recommend";
+import Topic from "./chirden/topic/Topic";
+import TheSurrounding from "./chirden/thesurrounding/TheSurrounding";
 export default {
   name: "Location",
   components: {
     NavBar,
     Swiper,
-    Recommend
+    Topic,
+    Recommend,
+    TheSurrounding
   },
   data() {
     return {
@@ -36,7 +42,7 @@ export default {
 };
 </script>
 <style scoped>
-.van-search{
+.van-search {
   padding: 5px 0;
 }
 .swiper {
