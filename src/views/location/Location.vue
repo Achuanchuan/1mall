@@ -17,6 +17,8 @@
     <recommend />
     <topic />
     <the-surrounding />
+    <travel />
+    <div style="height:200px"></div>
   </div>
 </template>
 <script>
@@ -25,6 +27,7 @@ import Swiper from "./chirden/swiper/Swiper";
 import Recommend from "./chirden/recommend/Recommend";
 import Topic from "./chirden/topic/Topic";
 import TheSurrounding from "./chirden/thesurrounding/TheSurrounding";
+import Travel from './chirden/travel/Travel'
 export default {
   name: "Location",
   components: {
@@ -32,7 +35,8 @@ export default {
     Swiper,
     Topic,
     Recommend,
-    TheSurrounding
+    TheSurrounding,
+    Travel
   },
   data() {
     return {

@@ -15,10 +15,10 @@
       <swiper-slide>
         <van-row type="flex" justify="center">
           <van-col class="left" span="11">
-            <img src="@assets/img/location/weekend/weekend1.jpg" alt />
+            <img src="@assets/img/location/weekend/weekend3.jpg" alt />
           </van-col>
           <van-col class="right" span="11">
-            <img src="@assets/img/location/weekend/weekend2.jpg" alt />
+            <img src="@assets/img/location/weekend/weekend4.jpg" alt />
           </van-col>
         </van-row>
       </swiper-slide>
@@ -28,7 +28,7 @@
             <img src="@assets/img/location/weekend/weekend1.jpg" alt />
           </van-col>
           <van-col class="right" span="11">
-            <img src="@assets/img/location/weekend/weekend2.jpg" alt />
+            <img src="@assets/img/location/weekend/weekend3.jpg" alt />
           </van-col>
         </van-row>
       </swiper-slide>

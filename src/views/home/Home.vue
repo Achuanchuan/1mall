@@ -1,7 +1,10 @@
 <template>
   <div id="home">
     <nav-bar class="home-nav">
-      <div class="adress" slot="left">重庆<van-icon name="arrow-down" /></div>
+      <div class="adress" slot="left">
+        重庆
+        <van-icon name="arrow-down" />
+      </div>
       <div slot="center">
         <van-search class="search" placeholder="请输入搜索关键词" v-model="value" />
       </div>
@@ -15,9 +18,7 @@
     <preferential />
     <holiday />
     <tickets />
-
-    <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
-    </van-pull-refresh>
+    <div style="height:50px"></div>
   </div>
 </template>
 <script>
@@ -47,17 +48,18 @@ export default {
     return {
       result: null,
       value: "",
-      isLoading: false
+      // isLoading: false //控制下拉刷新的加载动画
     };
   },
   methods: {
-    onRefresh() {
-      setTimeout(() => {
-        this.$toast("刷新成功");
-        this.isLoading = false;
-        this.count++;
-      }, 500);
-    }
+    // onRefresh() {
+    //   let self = this;
+    //   setTimeout(() => {
+    //     self.totalPage = 0;
+    //     self.pageNumber = 0;
+    //     self.init(); //加载数据
+    //   }, 500);
+    // }
   },
   created() {
     getHomeData().then(res => {

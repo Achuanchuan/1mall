@@ -1,19 +1,30 @@
 <template >
   <div id="records">
     <nav-bar class="records-nav">
-      <div class="adress" slot="left">全部订单</div>
+      <div class="record" slot="left">
+        <p>全部订单</p>
+      </div>
       <div slot="center">
         <div>我的订单</div>
       </div>
-      <div slot="right"></div>
+      <div slot="right"><p>实名同步</p></div>
     </nav-bar>
-
-    <vue-waterfall-easy :imgsArr="imgsArr" @scrollReachBottom="fetchImgsData" @pullDownEnd="endMove">
-      <div class="img-info" slot-scope="props">
-        <p class="some-info">第{{props.index+1}}张图片</p>
-        <p class="some-info" v-for="item in props.value.info" :key="item.id">{{props.value.info.text}}</p>
-      </div>
-    </vue-waterfall-easy>
+    <div class="record-water">
+      <vue-waterfall-easy
+        :imgsArr="imgsArr"
+        @scrollReachBottom="fetchImgsData"
+        @pullDownEnd="endMove"
+      >
+        <div class="img-info" slot-scope="props">
+          <p class="some-info">第{{props.index+1}}张图片</p>
+          <p
+            class="some-info"
+            v-for="item in props.value.info"
+            :key="item.id"
+          >{{props.value.info.text}}</p>
+        </div>
+      </vue-waterfall-easy>
+    </div>
   </div>
 </template>
 <script>
@@ -44,14 +55,13 @@ export default {
           link: "https://www.baidu.com",
           info: [
             {
-              id:'01',
-              text:'bb',
+              id: "01",
+              text: "bb"
             },
             {
-              id:'02',
-              text:'bb',
+              id: "02",
+              text: "bb"
             }
-            
           ]
         });
       }
@@ -101,5 +111,8 @@ export default {
 <style scoped>
 .vue-waterfall-easy-container {
   position: fixed !important;
+}
+p {
+  font-size: 12px;
 }
 </style>
