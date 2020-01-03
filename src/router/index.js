@@ -24,6 +24,10 @@ export default new Router({
       component: Service
     },
     {
+      path: "/service/:id",
+      component: Service
+    },
+    {
       path: "/records",
       component: Records
     },

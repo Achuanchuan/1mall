@@ -23,10 +23,9 @@ export default {
   line-height: 44px;
   text-align: center;
 }
-.left,
-.right {
+.left,.right{
   width: 60px;
-  background-color: #fff;
+  height: 40px;
 }
 .center {
   flex: 1;
