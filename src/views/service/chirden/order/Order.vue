@@ -8,7 +8,7 @@
     </div>
     <div class="order-side">
       <div class="order-side-left">
-        <img src="" alt="">
+        <img src="@assets/img/service/msnui-call.png" alt="">
       </div>
       <div class="order-side-center">
         <p class="order-side-center-p">{{h}}<p>
@@ -52,6 +52,11 @@ export default {
   background-color: #6be3f3;
   border-radius: 50%;
   margin: 5px;
+}
+.order-side-left img{
+  width: 80%;
+  height: 80%;
+  margin: 3px;
 }
 .order-side-center{
   float: left;
