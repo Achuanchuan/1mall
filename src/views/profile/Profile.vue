@@ -4,20 +4,30 @@
       <div class="right" slot="right">
         <van-icon name="setting-o" />
         <van-icon name="scan" />
-        <van-icon name="more-o" />
+        <van-icon name="more-o" dot />
       </div>
     </nav-bar>
     <enroll />
+    <my-order />
+    <wallet />
+    <more />
+    <div style="height:50px"></div>
   </div>
 </template>
 <script>
 import NavBar from "@components/common/navbar/NavBar";
 import Enroll from "./chirden/enroll/Enroll";
+import MyOrder from "./chirden/myorder/MyOrder";
+import Wallet from "./chirden/wallet/Wallet";
+import More from './chirden/more/More'
 export default {
   name: "Profile",
   components: {
     NavBar,
-    Enroll
+    Enroll,
+    MyOrder,
+    Wallet,
+    More
   }
 };
 </script>
@@ -28,7 +38,8 @@ export default {
 .van-icon {
   margin: 10px;
 }
-.left,.right{
+.left,
+.right {
   width: 120px;
 }
 </style>
