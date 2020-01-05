@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>热门推荐</h3>
-    <van-tabs type="card" animated>
+    <van-tabs type="card" animated color="#0ac8e0">
       <van-tab v-for="item of month" :key="item.id" :title="item.title">
         <div class="recommend">
           <van-grid :column-num="3" :border="false" :square="true">
@@ -383,6 +383,12 @@ export default {
 }
 .recommend {
   padding: 10px 8px 0 6px;
+}
+.van-tabs__nav--card .van-tab.van-tab--active{
+  background-color: #0ac8e0;
+}
+.van-tabs__nav--card{
+  border: 1px solid #0ac8e0;
 }
 h3{
   font-weight: bolder;
