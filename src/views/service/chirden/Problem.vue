@@ -6,11 +6,13 @@
       <div class="hr"></div>
     </div>
     <van-grid :gutter="10" :border="false">
-      <van-grid-item v-for="item in problem" :key="item.id" :to="item.router">
-        <div class="img">
-          <img :src="item.imgUrl" alt />
-        </div>
-        <p>{{item.title}}</p>
+      <van-grid-item v-for="item in problem" :key="item.id">
+        <router-link :to="item.router">
+          <div class="img">
+            <img :src="item.imgUrl" alt />
+          </div>
+          <p>{{item.title}}</p>
+        </router-link>
       </van-grid-item>
     </van-grid>
   </div>
@@ -25,13 +27,13 @@ export default {
           id: "01",
           imgUrl: require("@assets/img/service/feiji.png"),
           title: "机票",
-          router: ""
+          router: "/detail/AirlineTicketProblem"
         },
         {
           id: "02",
           imgUrl: require("@assets/img/service/jiudian.png"),
           title: "酒店",
-          router: ""
+          router: "/detail/AirlineTicketProblem"
         },
         {
           id: "03",
@@ -72,6 +74,11 @@ export default {
       ]
     };
   }
+  // methods: {
+  //   itemProblem() {
+  //    this.$router.push('./chirden' + this.problem.id)
+  //   }
+  // }
 };
 </script>
 <style scoped>

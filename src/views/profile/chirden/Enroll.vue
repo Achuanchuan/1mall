@@ -107,7 +107,7 @@ export default {
 .next p {
   margin-top: -10px;
 }
-p {
+.van-col p {
   text-align: center;
   margin-top: 5px;
 }

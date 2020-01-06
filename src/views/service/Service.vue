@@ -15,8 +15,8 @@
 </template>
 <script>
 import NavBar from "@components/common/navbar/NavBar";
-import Problem from "./chirden/problem/Problem";
-import Order from "./chirden/order/Order";
+import Problem from "./chirden/Problem";
+import Order from "./chirden/Order";
 export default {
   name: "Service",
   components: {

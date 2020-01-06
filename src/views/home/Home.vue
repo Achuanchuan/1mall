@@ -23,12 +23,12 @@
 </template>
 <script>
 import NavBar from "@components/common/navbar/NavBar";
-import Swiper from "./chirden/swiper/Swiper";
-import Icons from "./chirden/icons/Icons";
-import IconsWc from "./chirden/icons/IconsWc";
-import Preferential from "./chirden/preferential/Preferential";
-import Holiday from "./chirden/holiday/Holiday";
-import Tickets from "./chirden/tickets/Tickets";
+import Swiper from "./chirden/Swiper";
+import Icons from "./chirden/Icons";
+import IconsWc from "./chirden/IconsWc";
+import Preferential from "./chirden/Preferential";
+import Holiday from "./chirden/Holiday";
+import Tickets from "./chirden/Tickets";
 
 // import Scroll from "@components/common/scroll/Scroll";
 import { getHomeData } from "@network/home";

@@ -19,9 +19,9 @@
 </template>
 <script>
 import NavBar from "@components/common/navbar/NavBar";
-import Journey from './chirden/journey/Journey'
-import WantTo from './chirden/wantto/WantTo'
-import NextStation from './chirden/nextstation/NextStation'
+import Journey from './chirden/Journey'
+import WantTo from './chirden/WantTo'
+import NextStation from './chirden/NextStation'
 export default {
   name: "Records",
   components: {
