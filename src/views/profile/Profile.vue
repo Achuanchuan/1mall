@@ -16,10 +16,10 @@
 </template>
 <script>
 import NavBar from "@components/common/navbar/NavBar";
-import Enroll from "./chirden/Enroll";
-import MyOrder from "./chirden/MyOrder";
-import Wallet from "./chirden/Wallet";
-import More from './chirden/More'
+import Enroll from "./children/Enroll";
+import MyOrder from "./children/MyOrder";
+import Wallet from "./children/Wallet";
+import More from "./children/More";
 export default {
   name: "Profile",
   components: {

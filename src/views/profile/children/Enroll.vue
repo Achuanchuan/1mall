@@ -1,24 +1,27 @@
 <template>
   <div id="enroll">
     <div class="enroll-loging">
-      <div class="enroll-loging-left">
-        <img src="@assets/img/profile/enroll/touxiang.png" alt />
-      </div>
-      <div class="enroll-loging-center">
-        <p class="dl">{{dl}}</p>
-        <p class="text">{{text}}</p>
-      </div>
-      <div class="enroll-loging-right">
-        <img src="@assets/img/profile/enroll/jinbi.png" alt />
-        <p>签到</p>
-      </div>
+      <router-link to="/login">
+        <div class="enroll-loging-left">
+          <img src="@assets/img/profile/enroll/touxiang.png" alt />
+        </div>
+        <div class="enroll-loging-center">
+          <p class="dl">{{dl}}</p>
+          <p class="text">{{text}}</p>
+        </div>
+        <div class="enroll-loging-right">
+          <img src="@assets/img/profile/enroll/jinbi.png" alt />
+          <p>签到</p>
+        </div>
+      </router-link>
+      <router-view></router-view>
     </div>
     <van-row type="flex" justify="center">
-      <van-col span="6" v-for="item in enroll" :key="item.id">
+      <van-col class="nextA" span="6" v-for="item in enroll" :key="item.id">
         <p>{{item.count}}</p>
         <p>{{item.text}}</p>
       </van-col>
-      <van-col class="next" span="6">
+      <van-col class="nextB" span="6">
         <p>
           <img src="@assets/img/profile/enroll/credentials.png" alt />
         </p>
@@ -101,13 +104,13 @@ export default {
 .van-col {
   border-right: rgb(224, 224, 224) 1px solid;
 }
-.next {
+.nextB {
   border: none;
 }
-.next p {
+.nextB p {
   margin-top: -10px;
 }
-.van-col p {
+.nextA p {
   text-align: center;
   margin-top: 5px;
 }

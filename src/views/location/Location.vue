@@ -23,11 +23,11 @@
 </template>
 <script>
 import NavBar from "@components/common/navbar/NavBar";
-import Swiper from "./chirden/Swiper";
-import Recommend from "./chirden/Recommend";
-import Topic from "./chirden/Topic";
-import TheSurrounding from "./chirden/TheSurrounding";
-import Travel from './chirden/Travel'
+import Swiper from "./children/Swiper";
+import Recommend from "./children/Recommend";
+import Topic from "./children/Topic";
+import TheSurrounding from "./children/TheSurrounding";
+import Travel from './children/Travel'
 export default {
   name: "Location",
   components: {
