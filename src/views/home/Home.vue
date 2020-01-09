@@ -9,7 +9,7 @@
         <van-search class="search" placeholder="请输入搜索关键词" v-model="value" />
       </div>
       <div slot="right">
-        <van-button class="btn-dl" type="primary" to="profile">登录</van-button>
+        <van-button class="btn-dl" type="primary" to="/login">登录</van-button>
       </div>
     </nav-bar>
     <swiper />

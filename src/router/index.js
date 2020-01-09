@@ -26,41 +26,67 @@ const routes = [
   },
   {
     path: "/home",
-    component: Home
+    component: Home,
+    meta: {
+      navShow: true
+    }
   },
   {
     path: "/service",
-    component: Service
+    component: Service,
+    meta: {
+      navShow: true
+    }
   },
   {
     path: "/records",
-    component: Records
+    component: Records,
+    meta: {
+      navShow: true
+    }
   },
   {
     path: "/location",
-    component: Location
+    component: Location,
+    meta: {
+      navShow: true
+    }
   },
   //  我的页面
   {
     path: "/profile",
-    component: Profile
+    component: Profile,
+    meta: {
+      navShow: true
+    }
   },
   {
     path: "/detail/:id",
-    component: AirlineTicketProblem
+    component: AirlineTicketProblem,
+    meta: {
+      navShow: false
+    }
   },
   {
     path: "/login",
     component: Login,
-    children: []
+    meta: {
+      navShow: false
+    }
   },
   {
     path: "/loginpwd",
-    component: LoginPwd
+    component: LoginPwd,
+    meta: {
+      navShow: false
+    }
   },
   {
     path: "/findmi",
-    component: FindMi
+    component: FindMi,
+    meta: {
+      navShow: false
+    }
   }
 ];
 
