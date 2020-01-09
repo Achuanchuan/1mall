@@ -13,6 +13,8 @@ const Records = () => import("@views/records/Records");
 
 const Profile = () => import("@views/profile/Profile");
 const Login = () => import("@views/login/Login");
+const LoginPwd = () => import("@views/login/LoginPwd");
+const FindMi = () => import("@views/login/FindMi");
 // const Login = () => import("@views/profile/child/Login");
 
 Vue.use(Router);
@@ -42,12 +44,6 @@ const routes = [
   {
     path: "/profile",
     component: Profile
-    // children: [
-    //   {
-    //     path: "child",
-    //     component: Login
-    //   }
-    // ]
   },
   {
     path: "/detail/:id",
@@ -55,7 +51,16 @@ const routes = [
   },
   {
     path: "/login",
-    component: Login
+    component: Login,
+    children: []
+  },
+  {
+    path: "/loginpwd",
+    component: LoginPwd
+  },
+  {
+    path: "/findmi",
+    component: FindMi
   }
 ];
 

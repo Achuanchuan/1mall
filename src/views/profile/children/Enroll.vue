@@ -14,7 +14,6 @@
           <p>签到</p>
         </div>
       </router-link>
-      <router-view></router-view>
     </div>
     <van-row type="flex" justify="center">
       <van-col class="nextA" span="6" v-for="item in enroll" :key="item.id">
