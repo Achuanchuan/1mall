@@ -1,7 +1,7 @@
 <template>
   <div class="icons">
     <van-grid :column-num="5" :border="false">
-      <van-grid-item v-for="item of iconList" :key="item.id">
+      <van-grid-item v-for="item of iconList" :key="item.id" :to="item.link">
         <img :src="item.imgUrl" alt />
         <p class="icons-p">{{item.desc}}</p>
       </van-grid-item>
@@ -16,8 +16,9 @@ export default {
       iconList: [
         {
           id: "01",
-          imgUrl:require("@assets/img/home/icon1/hotel.png"),
-          desc: "酒店"
+          imgUrl: require("@assets/img/home/icon1/hotel.png"),
+          desc: "酒店",
+          link: "/homedetail/Hotel"
         },
         {
           id: "02",
@@ -48,7 +49,7 @@ export default {
 .van-grid-item img {
   width: 100%;
 }
-.icons-p{
+.icons-p {
   margin-top: 5px;
 }
 </style>

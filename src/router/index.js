@@ -2,12 +2,13 @@ import Vue from "vue";
 import Router from "vue-router";
 
 const Home = () => import("@views/home/Home");
+const Hotel = () => import("@views/homedetail/Hotel");
 
 const Location = () => import("@views/location/Location");
 
 const Service = () => import("@views/service/Service");
 const AirlineTicketProblem = () => import("@views/detail/AirlineTicketProblem");
-// const Login = () => import("@views/detail/Login");
+
 
 const Records = () => import("@views/records/Records");
 
@@ -15,7 +16,6 @@ const Profile = () => import("@views/profile/Profile");
 const Login = () => import("@views/login/Login");
 const LoginPwd = () => import("@views/login/LoginPwd");
 const FindMi = () => import("@views/login/FindMi");
-// const Login = () => import("@views/profile/child/Login");
 
 Vue.use(Router);
 
@@ -84,6 +84,13 @@ const routes = [
   {
     path: "/findmi",
     component: FindMi,
+    meta: {
+      navShow: false
+    }
+  },
+  {
+    path: "/homedetail/:id",
+    component: Hotel,
     meta: {
       navShow: false
     }
