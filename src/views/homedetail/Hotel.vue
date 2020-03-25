@@ -139,15 +139,26 @@ export default {
       ]
     };
   },
+  mounted() {
+    	for (var i = 1; i <= 12; i++) {
+        this.items.push(i + ' 次')
+      }
+      this.top = 1
+      this.bottom = 12
+    },
   methods: {
     onClickLeft() {
       this.$router.go(-1);
     },
-    refresh() {
-      // let _this = this;
-      // _this.data.pageIndex = 1; //重置页数刷新每次页数都是第一页
-      // _this.noDate = false; //重置数据判断
-      // _this.qryNoticeList();
+    refresh(done) {
+      setTimeout(() => {
+          var start = this.top - 1
+          for (var i = start; i > start - 10; i--) {
+            this.items.splice(0, 0, i + '')
+          }
+          this.top = this.top - 10
+          done()
+        }, 1500)
       console.log("refresh");
     },
     infinite(done) {
