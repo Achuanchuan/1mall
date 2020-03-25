@@ -1,7 +1,7 @@
 <template id="temp">
   <div class="hotel">
     <scroller height="100%" :on-refresh="refresh" :on-infinite="infinite" ref="scrollerBottom">
-      <van-nav-bar title="标题" left-text="返回" left-arrow @click-left="onClickLeft" />
+      <van-nav-bar title="酒店" left-text="返回" left-arrow @click-left="onClickLeft" />
       <main>
         <h3>
           <label>酒店排行榜</label>

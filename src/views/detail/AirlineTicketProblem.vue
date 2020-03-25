@@ -1,7 +1,7 @@
 <template>
   <div id="AirlineTicket">
     <van-nav-bar
-      title="标题"
+      title="机票"
       left-text="返回"
       left-arrow
       @click-left="onClickLeft"
